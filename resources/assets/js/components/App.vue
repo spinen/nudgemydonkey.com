@@ -28,24 +28,18 @@
             </div>
         </div>
 
-        <div class="section error">
-            <h3>There was an error lorem ipsum dolor sit amet</h3>
+        <div transition="fade" v-if="errors" class="section error">
+            <h3>{{ errors }}</h3>
         </div>
 
         <div class="section signoff">
             <div class="mention laracon">
                 <div class="logo"></div>
-                <h3>Inspired by <a target="_blank" href="http://jackmcdade.com">Jack McDade's</a> talk at <a
-                        target="_blank" href="http://laracon.us">Laracon US 2016</a> on Wizards, Lawnmowers, and
-                    Hovercrafts where he addresses <a target="_blank"
-                                                      href="https://en.wikipedia.org/wiki/Buridan%27s_ass">Buridan's
-                        ass</a>. </h3>
+                <h3>Inspired by <a target="_blank" href="http://jackmcdade.com">Jack McDade's</a> talk at <a target="_blank" href="http://laracon.us">Laracon US 2016</a> on <a target="_blank" href="https://speakerdeck.com/jackmcdade/wizards-lawnmowers-and-hovercrafts">Wizards, Lawnmowers, and Hovercrafts</a> where he addresses <a target="_blank" href="https://en.wikipedia.org/wiki/Buridan%27s_ass">Buridan's ass</a>.</h3>
             </div>
             <div class="mention spinen">
                 <div class="logo"></div>
-                <h3>Hacked together by the guys at <a target="_blank" href="http://spinen.com">SPINEN</a> on <a
-                        target="_blank" href="https://laravel.com">Laravel 5.3</a> with <a href="https://vuejs.org">vue.js
-                    2.0</a></h3>
+                <h3>Hacked together by the guys at <a target="_blank" href="http://spinen.com">SPINEN</a> on <a target="_blank" href="https://laravel.com">Laravel 5.3</a> with <a href="https://vuejs.org">vue.js</a></h3>
             </div>
 
         </div>
@@ -65,7 +59,8 @@
                 location:    'center',
                 showResult:  false,
                 editOption1: false,
-                editOption2: false
+                editOption2: false,
+                errors:      false
             }
         },
         methods: {
@@ -74,9 +69,13 @@
                     return this.nudge();
                 }
 
-                return alert('add options')
+                this.errors = "Please enter options.";
+                setTimeout(function () {
+                    console.log(this)
+;                }, 1);
             },
             nudge() {
+                this.errors = false;
 
                 if (Math.round(Math.random())) {
                     return this.location = 'left'
@@ -88,6 +87,7 @@
                 this.option1 = '';
                 this.option2 = '';
                 this.location = 'center';
+                this.errors = false;
             }
         }
     }
