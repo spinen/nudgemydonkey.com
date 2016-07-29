@@ -19,7 +19,9 @@
     "vue-resource": "^0.9.3"
   },
   "dependencies": {
+    "bourbon": "^4.2.7",
     "laravel-elixir-vueify": "^1.0.3",
+    "normalize-scss": "^5.0.3",
     "vue-clickaway": "^1.1.1"
   }
 }
