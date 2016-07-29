@@ -20,7 +20,7 @@
                 <button @click="check" class="button">Nudge My Donkey</button>
             </div>
             <div v-else>
-                <button @click="reset" class="button">Rest</button>
+                <button @click="reset" class="button">Reset</button>
             </div>
 
             <div @click="editOption2 = true">
