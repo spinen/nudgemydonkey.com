@@ -1,6 +1,6 @@
 
-window._ = require('lodash');
-window.Cookies = require('js-cookie');
+// window._ = require('lodash');
+// window.Cookies = require('js-cookie');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -8,8 +8,8 @@ window.Cookies = require('js-cookie');
  * code may be modified to fit the specific needs of your application.
  */
 
-window.$ = window.jQuery = require('jquery');
-require('bootstrap-sass/assets/javascripts/bootstrap');
+// window.$ = window.jQuery = require('jquery');
+// require('bootstrap-sass/assets/javascripts/bootstrap');
 
 /**
  * Vue is a modern JavaScript for building interactive web interfaces using

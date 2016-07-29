@@ -1,0 +1,201 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.container {
+	width: 92%;
+	margin: 0 auto;
+	@include breakpoint(large) {
+		width: 80%;
+	}
+
+	@include breakpoint(xlarge) {
+		width: 70%;
+	}
+
+	.section {
+		&.scene, &.inputs {
+			@include display(flex);
+			@include justify-content(space-between);
+			> div {
+				width: 28%;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				@include breakpoint(large) {
+					width: 20%;
+				}
+			}
+
+		}
+
+		&.scene {
+			height: 5rem;
+			@include breakpoint(large) {
+				height: 20rem;
+			}
+			> div {
+				@include transition(all 0.5s ease-in-out);
+
+				&.bucket {
+
+					&.water {
+						background-image: url("/images/bucket-water.png");
+					}
+
+					&.grain {
+						background-image: url("/images/bucket-grain.png");
+					}	
+
+				}
+				&.donkey {
+					z-index: 9;
+					
+					&.center {
+						background-image: url("/images/donkey-center.png");
+					}
+
+					&.left {
+						
+						background-image: url("/images/donkey-left.png");
+						margin-left: -60%;
+						@include breakpoint(large) {
+							margin-left: -70%;
+						}
+					}
+
+					&.right {
+						background-image: url("/images/donkey-right.png");
+						margin-right: -60%;
+						@include breakpoint(large) {
+							margin-right: -70%;
+						}
+					}
+				}
+			}
+		}
+
+		&.inputs {
+			margin:2rem 0;
+			input, button{
+				width: 100%;
+				padding: 1rem;
+				font-size: 1rem;
+				-webkit-border-radius: 3px 3px 3px 3px;
+				border-radius: 3px 3px 3px 3px;
+			}
+			input {
+				border: 1px solid #ddd;
+			}
+
+			button {
+				background-color: #2A47A8;
+				text-align: center;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 0.6rem;
+				@include breakpoint(medium) {
+					font-size: 0.8rem;
+				}
+				border: 0;
+
+				&:hover {
+					background-color: #0A2788;
+				}
+			}
+		}
+
+		&.error {
+			padding: 1px;
+			text-align: center;
+			background-color: #da3b0a;
+			h3 {
+				color: #fff;
+			}
+		}
+
+		&.signoff {
+			.mention {
+				@include display(flex);
+				@include flex-wrap(wrap);
+				@include justify-content(center);
+				margin: 6rem 0;
+				@include breakpoint(large) {
+
+					@include flex-wrap(nowrap);
+				}
+
+
+				.logo {
+					flex-basis: 60%;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					margin-right: 6%;
+					height: 6rem;
+					@include breakpoint(large) {
+						height: auto;
+						flex-basis: 33%;
+					}
+				}
+
+				&.laracon {
+					.logo {
+						background-image: url("/images/laracon-2016.png");
+					}
+					a {
+						color: #F4645F;
+						&:hover {
+							color: #CF443F;
+						}
+					}
+				}
+
+				&.spinen {
+					.logo {
+						background-image: url("/images/spinen-logo-2016.png");
+					}
+
+					a {
+						color: #2A47A8;
+						&:hover {
+							color: #0A2788;
+						}
+					}
+				}
+
+				h3 {
+					flex-basis: 100%;
+
+				}
+			}
+		}
+
+		&.forkme {
+			text-align: center;
+			margin-bottom: 6rem;
+			a {
+				padding: 1rem;
+				font-size: 1rem;
+				-webkit-border-radius: 3px 3px 3px 3px;
+				border-radius: 3px 3px 3px 3px;
+				background-color: #2A47A8;
+				text-align: center;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 0.8rem;
+				text-decoration: none;
+				&:hover {
+					background-color: #0A2788;
+				}
+			}
+		}
+	}
+}
