@@ -30,4 +30,6 @@
 
         </script>
     </body>
+    <div id="preload-01"></div>
+    <div id="preload-02"></div>
 </html>

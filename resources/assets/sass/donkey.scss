@@ -7,6 +7,9 @@ html {
 }
 
 
+#preload-01 { background: url("/images/donkey-left.png") no-repeat -9999px -9999px; }
+#preload-02 { background: url("/images/donkey-right.png") no-repeat -9999px -9999px; }
+
 .container {
 	width: 92%;
 	margin: 0 auto;
@@ -40,7 +43,7 @@ html {
 				height: 20rem;
 			}
 			> div {
-				@include transition(all 0.5s ease-in-out);
+				@include transition(all 1s ease-in-out);
 
 				&.bucket {
 
