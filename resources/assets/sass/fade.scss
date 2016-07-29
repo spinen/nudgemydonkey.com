@@ -1,0 +1,35 @@
+.fade-transition {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-enter {
+  animation-name: fade-enter;
+}
+
+@keyframes fade-leave {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fade-leave {
+  animation-name: fade-leave;
+}
