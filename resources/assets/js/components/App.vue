@@ -35,7 +35,7 @@
         <div class="section signoff">
             <div class="mention laracon">
                 <div class="logo"></div>
-                <h3>Inspired by <a target="_blank" href="http://jackmcdade.com">Jack McDade's</a> talk at <a target="_blank" href="http://laracon.us">Laracon US 2016</a> on <a target="_blank" href="https://speakerdeck.com/jackmcdade/wizards-lawnmowers-and-hovercrafts">Wizards, Lawnmowers, and Hovercrafts</a> where he addresses <a target="_blank" href="https://en.wikipedia.org/wiki/Buridan%27s_ass">Buridan's ass</a>.</h3>
+                <h3>Inspired by <a target="_blank" href="http://jackmcdade.com">Jack McDade's</a> talk at <a target="_blank" href="http://laracon.us">Laracon US 2016</a> on <a target="_blank" href="https://speakerdeck.com/jackmcdade/wizards-lawnmowers-and-hovercrafts">Wizards, Lawnmowers, and Hovercrafts</a> where he addresses <a target="_blank" href="https://en.wikipedia.org/wiki/Buridan%27s_ass">Buridan's ass</a> and <a target="_blank" href="https://twitter.com/jdgraffam">JD Graffam's</a> article <a target="_blank" href="https://medium.com/@jdgraffam/nudge-my-donkey-c7c6d5e04291#.7ajzrbujm">Nudge My Donkey</a>.</h3>
             </div>
             <div class="mention spinen">
                 <div class="logo"></div>
