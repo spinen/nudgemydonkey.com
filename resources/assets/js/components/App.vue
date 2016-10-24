@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="header">
-            <h1>Stuck between 2 choices, let us Nudge Your Donkey</h1>
+            <h1>Stuck between 2 choices?<br />Let us Nudge Your Donkey</h1>
         </div>
 
         <div class="section scene">
